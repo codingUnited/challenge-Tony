@@ -66,3 +66,4 @@ Advanced and curious members can stretch further into tooling and hosting.
 (even just a linter or echo)
  Bonus: Add a favicon or use a custom font
 
+The .gitignore file prevents unnecessary or sensitive files (like system files, logs, secrets, or dependency folders) from being committed to version control. This keeps the repository clean and secure.
