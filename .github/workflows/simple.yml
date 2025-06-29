@@ -1,0 +1,18 @@
+name: Simple GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+      - feature-style
+
+jobs:
+  run-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Print success message
+        run: echo "Hello from GitHub Actions! Your workflow is running successfully."
