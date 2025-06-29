@@ -1,16 +1,65 @@
+/* Base body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 2rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #c0eaff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Headings with glow effect */
+h1, h2, h3 {
+  text-align: center;
+  margin: 0.3em 0;
+  text-shadow:
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #00ffff,
+    0 0 30px #00ffff;
+}
+
+/* Different sizes and colors for headings */
 h1 {
-  color: #0057b7;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00e5ff;
 }
 
-a {
-  color: #d6336c;
-  text-decoration: none;
+h2 {
+  font-size: 2rem;
+  color: #33ccff;
 }
 
+h3 {
+  font-size: 1.5rem;
+  color: #66d9ff;
+  font-weight: 600;
+}
+
+/* Add a subtle futuristic border around the content */
+body > * {
+  background: rgba(0, 40, 70, 0.5);
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow:
+    0 0 15px rgba(0, 191, 255, 0.6),
+    inset 0 0 10px rgba(0, 191, 255, 0.3);
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+}
+
+/* Smooth transitions on hover for headings */
+h1:hover, h2:hover, h3:hover {
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff,
+    0 0 60px #00ffff;
+  cursor: default;
+}
